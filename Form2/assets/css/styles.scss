@@ -7,6 +7,17 @@
   font-family: "Manrope";
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: rgba(0, 0, 0, 0.623);
@@ -49,25 +60,18 @@
 
 body {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.747) 0%,
-      rgba(0, 0, 0, 0.747) 10%
-    ),
-    url("https://images.pexels.com/photos/1181355/pexels-photo-1181355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );
 }
 h1 {
   display: flex;
   justify-content: center;
   color: white;
+  margin: 15px 0;
 }
 h4 {
   padding-top: 10px;
@@ -75,6 +79,8 @@ h4 {
   margin-bottom: 10px;
 }
 #main {
+  height: 100;
+  margin:0  10px;
   width: fit-content;
   display: flex;
   align-items: center;
@@ -115,5 +121,11 @@ input {
   padding: 4px;
 }
 #button {
-  padding: 20px;
+margin: 15px 0;
+  .btn{
+    padding: 5px 0;
+    width:100%;
+    cursor:pointer;
+    }
 }
+
