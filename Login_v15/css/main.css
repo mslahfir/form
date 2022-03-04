@@ -221,7 +221,7 @@ iframe {
   text-align: center;
 }
 
-.login100-form-title::before {
+.background-image::before {
   content: "";
   display: block;
   position: absolute;
