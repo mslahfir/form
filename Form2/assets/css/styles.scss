@@ -7,16 +7,19 @@
   font-family: "Manrope";
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: rgba(0, 0, 0, 0.623);
   opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   color: rgba(0, 0, 0, 0.623);
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
+  /* Microsoft Edge */
   color: rgba(0, 0, 0, 0.623);
 }
 
@@ -52,10 +55,11 @@ body {
   justify-content: center;
   flex-direction: column;
   background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.747) 0%,
-    rgba(0, 0, 0, 0.747) 10%
-  ), url("https://images.pexels.com/photos/1181355/pexels-photo-1181355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+      to bottom,
+      rgba(0, 0, 0, 0.747) 0%,
+      rgba(0, 0, 0, 0.747) 10%
+    ),
+    url("https://images.pexels.com/photos/1181355/pexels-photo-1181355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,11 +67,11 @@ body {
 h1 {
   display: flex;
   justify-content: center;
-  color:white;
+  color: white;
 }
 h4 {
   padding-top: 10px;
-  color:white;
+  color: white;
   margin-bottom: 10px;
 }
 #main {
@@ -99,7 +103,7 @@ input {
   border: none;
   margin: 4px 0;
   background-color: #ffffffc2;
-    padding: 10px 15px;
+  padding: 10px 15px;
   border: none;
   outline: none;
   font-weight: 700;
