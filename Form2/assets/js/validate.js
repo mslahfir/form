@@ -1,6 +1,7 @@
 $( document ).ready(function() {
-    $("#form").submit(function(){
-        const formData = new FormData($(this));
+    $("#form").submit(function(e){
+        e.preventDefault();
+        const formData = new FormData($("#form"));
         console.log(formData.get("email"))
     })
 });
