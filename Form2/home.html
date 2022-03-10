@@ -1,96 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <h1>COSTO INDUSTRIES</h1>
-    <div class="conatiner" id="main">
-      <div class="container" id="in">
-        <form class="validate" id="form">
-          <h4>Employee Details</h4>
-          <div class="container" id="sec">
-            <input type="text" placeholder="Employee Name" required />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <title>Document</title>
+</head>
 
-            <input type="text" placeholder="Department" required />
-          </div>
-          <div class="container" id="sec">
-            <input type="text" placeholder="Designation" required />
-            <input type="date" name="" id="" required />
-          </div>
-          <div class="container" id="sec">
-            <input
-              type="tel"
-              name="Ph No"
-              id=""
-              placeholder="Ph No"
-              required
-              minlength="10"
-              maxlength="10"
-              step="none"
-            />
-            <input type="email" name="email" placeholder="Email Id" required />
-          </div>
-          <div class="container" id="sec">
-            <h4>Child Details</h4>
-            <input type="text" placeholder="Child Name" />
-            <input type="text" placeholder="College" />
-          </div>
-          <input type="number" name="" id="" placeholder="Marks in %" />
-          <br />
-          <div class="container">
+<body>
+  <script>
+    function clearForm() {
+      const form = document.getElementById("form");
+      form.reset();
+    }
+  </script>
+  <h1>COSTO INDUSTRIES</h1>
+  <div class="conatiner" id="main">
+    <div class="container" id="in">
+      <form class="validate" id="form" onSubmit=validate(event)>
+        <h4>Employee Details</h4>
+        <div class="container" id="sec">
+          <input type="text" placeholder="Employee Name" required name="empName" />
+          <input type=" text" placeholder="Department" required />
+        </div>
+        <div class="container" id="sec">
+          <input type="text" placeholder="Designation" required />
+          <input type="date" name="" id="" required />
+        </div>
+        <div class="container" id="sec">
+          <input type="tel" name="Ph No" id="" placeholder="Ph No" required minlength="10" maxlength="10" step="none" />
+          <input type="email" name="email" placeholder="Email Id" required />
+        </div>
+        <div class="container" id="sec">
+          <h4>Child Details</h4>
+          <input type="text" placeholder="Child Name" />
+          <input type="text" placeholder="College" />
+        </div>
+        <input type="number" name="" id="" placeholder="Marks in %" />
+        <br />
+        <div class="container">
+          <div class="form-radio">
             <input type="radio" id="Availed" name="drone" checked />
             <label id="radio" for="Availed">Availed</label>
+          </div>
+          <div class="form-radio">
             <input type="radio" id="notavailed" name="drone" checked />
             <label id="radio" for="notavailed">Not Availed</label>
+          </div>
 
-            <label for="sem">Semester No.</label>
-            <select name="sem" id="sem">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-            </select>
-          </div>
-          <div class="form-check form-check-inline">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              id="a"
-              value="option1"
-            />
-            <label class="form-check-label" for="a">Bonafide Certificate</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              id="b"
-              value="option2"
-            />
-            <label class="form-check-label" for="b">Mark Sheet</label>
-          </div>
-          <div id="button">
-            <button class="btn">Submit</button>
-          </div>
-        </form>
-      </div>
+          <label for="sem">Semester No.</label>
+          <select name="sem" id="sem" style="margin:10px 0;">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+        </div>
+        <div class="form-check form-check-inline" style="margin:10px 0;">
+          <input class="form-check-input" type="checkbox" id="a" value="option1" />
+          <label class="form-check-label" for="a">Bonafide Certificate</label>
+        </div>
+        <div class="form-check form-check-inline" style="margin:10px 0;">
+          <input class="form-check-input" type="checkbox" id="b" value="option2" />
+          <label class="form-check-label" for="b">Mark Sheet</label>
+        </div>
+        <div id="button">
+          <button class="btn">Submit</button>
+        </div>
+        <div id="button">
+          <button class="btn" onClick=clearForm()>Clear Form</button>
+        </div>
+      </form>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/js/validate.js"></script>
-  </body>
+  </div>
+  <script src="./assets/js/validate.js"></script>
+</body>
+
 </html>

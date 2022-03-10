@@ -82,7 +82,7 @@ input[type=number] {
 
 body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,7 +96,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: radial-gradient(circle 976px at 51.2% 51%, #0b1b67 0%, #10429d 0%, #0b1b67 17.3%, #0b1b67 58.8%, #0b1b67 71.4%, #10429d 100.2%, #bbbbbb 100.2%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.24)), to(rgba(0, 0, 0, 0.247))), url("https://images.pexels.com/photos/7942514/pexels-photo-7942514.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.247)), url("https://images.pexels.com/photos/7942514/pexels-photo-7942514.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 h1 {
@@ -108,6 +113,7 @@ h1 {
           justify-content: center;
   color: white;
   margin: 15px 0;
+  font-weight: 900;
 }
 
 h4 {
@@ -118,7 +124,7 @@ h4 {
 
 #main {
   height: 100;
-  margin: 0  10px;
+  margin: 0 10px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -134,8 +140,8 @@ h4 {
   background: rgba(255, 255, 255, 0.25);
   -webkit-box-shadow: 0 8px 32px 0 rgba(78, 78, 78, 0.37);
           box-shadow: 0 8px 32px 0 rgba(78, 78, 78, 0.37);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
   border-radius: 10px;
   padding: 0 15px;
   margin-top: 10px;
@@ -158,6 +164,10 @@ h4 {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 40px;
+}
+
+label {
+  color: white;
 }
 
 input {
@@ -186,5 +196,13 @@ input {
   padding: 5px 0;
   width: 100%;
   cursor: pointer;
+}
+
+.container {
+  margin-top: 10px;
+}
+
+.form-radio {
+  margin: 10px 0;
 }
 /*# sourceMappingURL=styles.css.map */
