@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     function validateForm(e) {
       e.preventDefault();
@@ -18,6 +19,9 @@
       alert("Welcome " + formData.get("fn") + "\nYour departure date is " + formData.get("d-d") +
         "\nYour return date is " + formData.get("r-d"));
     }
+    function fill(value) {
+        $("#second-field").val(value + "@gmail.com");
+      }
   </script>
 
   <div class="container">
@@ -25,11 +29,11 @@
     <form id="form" class="form" onSubmit="validateForm(event)">
       <div class="form-row">
         <label class="form-label" for="fn">First Name</label>
-        <input type="text" class="form-input" name="fn" placeholder="Your first name here" required />
+        <input type="text" class="form-input" id="form-input" name="fn" placeholder="Your first name here" required onkeyup="fill(this.value)" />
       </div>
       <div class="form-row">
         <label class="form-label" for="emailId">Email Id</label>
-        <input type="text" class="form-input" name="emailId" placeholder="Your Email Id here" required />
+        <input type="text" class="form-input" id="second-field" name="emailId" placeholder="Your Email Id here" required />
       </div>
       <div class="form-row">
         <label class="form-label" for="pn">Phone Number</label>
@@ -75,6 +79,7 @@
       <button class="submit-btn" type="submit">Submit</button>
     </form>
   </div>
+
 </body>
 
 </html>
